@@ -28,8 +28,10 @@ class LocationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
                 
+        
+        labelAnimation()
+        
         //지역설정
         let location = CLLocationCoordinate2D(latitude: 37.55612, longitude: 126.97236)
         let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
@@ -51,7 +53,38 @@ class LocationViewController: UIViewController {
         //2. Location Manager 딜리게이트 연결
         locationManager.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //showAlert()
+    }
+    
+    func labelAnimation() {
+        locationLabel.backgroundColor = .red
+        locationLabel.alpha = 0
+        
+                
+        UIView.animate(withDuration: 5) {
+            self.locationLabel.alpha = 1
+        }
 
+    }
+
+    @IBAction func updateLabelTextAlert(_ sender: UIButton) {
+        showAlert(title: "텍스트 변경", message: "레이블의 글자를 바꿉니다", okTitle: "바꾸기") {
+            self.locationLabel.text = "asdasdasddas"
+        }
+    }
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        
+        showAlert(title: "설정", message: "설정에서 권한을 허용해주세요", okTitle: "설정으로 이동") {
+            guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+    }
 }
 
 //3. location manager 딜리게이트 등록
