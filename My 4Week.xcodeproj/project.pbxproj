@@ -25,6 +25,7 @@
 		1B82ED0F2823BA670033104C /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B82ED0D2823BA670033104C /* TagCollectionViewCell.xib */; };
 		1B82ED112824A41F0033104C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B82ED102824A41F0033104C /* WebViewController.swift */; };
 		1B82ED172824CCDA0033104C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B82ED162824CCDA0033104C /* LocationViewController.swift */; };
+		1BDA024F282555B800E75205 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDA024E282555B800E75205 /* Alert+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		1B82ED0D2823BA670033104C /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		1B82ED102824A41F0033104C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1B82ED162824CCDA0033104C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		1BDA024E282555B800E75205 /* Alert+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				1B82ECE9282365240033104C /* ViewController.swift */,
 				1B82ECEB282365240033104C /* Main.storyboard */,
 				1B82ED162824CCDA0033104C /* LocationViewController.swift */,
+				1BDA024E282555B800E75205 /* Alert+Extension.swift */,
 				1B82ED102824A41F0033104C /* WebViewController.swift */,
 				1B82ED0C2823BA670033104C /* TagCollectionViewCell.swift */,
 				1B82ED0D2823BA670033104C /* TagCollectionViewCell.xib */,
@@ -182,6 +185,7 @@
 				1B82ECE6282365240033104C /* AppDelegate.swift in Sources */,
 				1B82ECE8282365240033104C /* SceneDelegate.swift in Sources */,
 				1B82ED112824A41F0033104C /* WebViewController.swift in Sources */,
+				1BDA024F282555B800E75205 /* Alert+Extension.swift in Sources */,
 				1B82ED0E2823BA670033104C /* TagCollectionViewCell.swift in Sources */,
 				1B82ED172824CCDA0033104C /* LocationViewController.swift in Sources */,
 				1B82ED0A2823B4D00033104C /* MainCollectionViewCell.swift in Sources */,
